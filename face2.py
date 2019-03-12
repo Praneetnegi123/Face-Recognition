@@ -23,11 +23,7 @@ model = cv2.face.LBPHFaceRecognizer_create()
 model.train(np.asarray(Training_Data), np.asarray(Labels))
 
 print("Model Training Complete!!!!!")
-img=cv2.imread(r'C:\Users\Praneet\Pictures\Saved Pictures\proj-img.jpg')
-rimg=cv2.resize(img,None,fx=.2,fy=.2)
-cv2.imshow('FACE-RECOGNATION',rimg)
-cv2.waitKey()==13
-cv2.destroyAllWindows()
+
 
 
 face_classifier = cv2.CascadeClassifier(r'C:\Users\Praneet\Downloads\Programs\opencv\sources\data\haarcascades_cuda\haarcascade_frontalface_default.xml')
